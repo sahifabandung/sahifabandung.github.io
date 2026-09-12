@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Inspiring Al-Quraisy - Penerbit Sahifa</title>
+		<meta charset="utf-8">
+		<meta content="Toko Buku Sahifa menyediakan aneka buku berkualitas dan terlengkap. Nikmati promo buku murah dengan pengiriman beragam" name="description">
+		<meta content="notranslate" name="google">
+		<meta content="yes" name="mobile-web-app-capable">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="width=device-width,none-scale=1,shrink-to-fit=no" name="viewport">
+		<meta content="#FFFFFF" name="theme-color">
+		<meta content="telephone=no" name="format-detection">
+		<meta property="og:url" content="https://sahifabandung.github.io/">
+		<meta property="og:type" content="article">
+		<meta property="og:title" content="Penerbit Sahifa">
+		<meta property="og:description" content="Toko Buku Sahifa menyediakan aneka buku berkualitas dan terlengkap. Nikmati promo buku murah dengan pengiriman beragam">
+		<meta property="og:image" content="https://sahifabandung.github.io/preview1.jpg">
+		<link rel="icon" href="https://sahifabandung.github.io/128.png" type="image/x-icon">
+		<link rel="icon" sizes="128x128" href="https://sahifabandung.github.io/128.png">
+		<link rel="apple-touch-icon" sizes="128x128" href="https://sahifabandung.github.io/128.png">
+		<link rel="apple-touch-icon-precomposed" sizes="128x128" href="https://sahifabandung.github.io/128.png">
+		<style>
+			:root {
+				--bgCol		:#E6E6E6;
+				--headCol	:#FFFFFF;
+				--mainCol	:#1d1d1f;
+				--subCol	:#6e6e73;
+			}
+			* {-webkit-tap-highlight-color: transparent;-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none}
+			body {margin:0;padding:0;font-family:arial;background-color:var(--bgCol);animation:body 2s forwards}
+			header div label, main ul li, header h2 {cursor:pointer;}
+			section, main, footer div {width:60vw;margin:0 auto;}
+			header {position:sticky;top:0;z-index:1;background-color:var(--headCol)}
+			header section {display:grid;grid-template-columns:auto auto;}
+			header div label {display:none;font-size:3.5vh}
+			header h2 {font-size:3vh;color:var(--mainCol)}
+			header input {display:none}
+			header ul {padding:0;align-items:center;display:flex;justify-content: right;}
+			header ul li {list-style:none;display:none;margin-left:2vh;}
+			header ul li a {font-size:1.5vh;text-decoration:none;color:var(--subCol)}
+			#selected {color:var(--mainCol);font-weight:bolder}
+			main {min-height:80vh;}
+			main h1 {font-size:6.5vh;max-width:75%;padding:0;margin:5vh 0 0 0;animation:h1 .4s forwards}
+			main p {font-size:2.5vh;max-width:75%;padding:0;margin:2vh 0 0 0;color:var(--subCol);animation:p .8s forwards}
+			main ul {padding:0;margin:5vh 0;display:grid;grid-template-columns:30% 30% 30%;grid-gap:3vh}
+			main ul li {list-style:none;margin:0;color:var(--headCol);border-radius:2vh;position:relative;background-color:#5F4A2F;height:40vh;display:block;animation:li 1.3s forwards}
+			main ul li:hover {opacity:0.95;}
+			main ul li a {text-decoration:none;color:var(--headCol)}
+			main ul li h3 {margin:0;padding:2vh;font-size:3vh}
+			main ul li h4 {margin:0;padding:2vh;font-size:2vh;position:absolute;left:0;bottom:0}
+			fieldset {
+				padding:2vh;
+				border-top:0;
+				border-left:solid 1px var(--subCol);
+				border-right:solid 1px var(--subCol);
+				border-bottom:solid 1px var(--subCol);
+				font-size:2.5vh;
+				animation: fieldset 1.4s forwards;
+			}
+			fieldset:first-of-type {border-top:solid 1px var(--subCol);margin-top:5vh;}
+			footer {background-color:#F5F5F7;}
+			footer div {margin-top:5vh;padding:3.5vh 0}
+
+			@keyframes h1 {from{margin-top:10vh} to{margin-top:5vh}}
+			@keyframes p {from{margin-top:4vh} to{margin-top:2vh}}
+			@keyframes li {from{margin-top:2vh;height:42vh} to{margin-top:0;height:40vh}}
+			@keyframes fieldset {from{padding:3vh 2vh} to{padding:2vh}}
+			@keyframes body {from{background-color:#FFFFFF} to{background-color:var(--bgCol)}}
+			
+			
+			@media (aspect-ratio: 16/9) {
+				section, main, footer div {width:50vw;}
+			}
+			@media (max-width:950px) {
+				header, section, main, footer div {width:auto;}
+				header section, main, footer div {padding:2vh;display:block}
+				header div {width:auto;display:flex;height:4vh;align-items:center}
+				header div label {margin-left:auto;display:none/*block*/;}
+				header input {display:inline-block;transform: scale(0.1);display:none;appearance:none;opacity:0;}
+				header ul {display:none;text-align:left;height:88vh}
+				header ul li {display:block;margin:0 0 2vh 0;}
+				header ul li a {font-size:3vh;}
+				header input:checked ~ ul {display:block;}
+				header input:checked ~ ul li {animation: ul-li .4s forwards ease-out;}
+				header input:checked ~ ul li a {animation: ul-li-a .4s forwards;}
+				#selected {font-weight:normal}
+				main h1, main p {max-width:none;}
+				main h1 {font-size:5.5vh;margin:4vh 0 0 0;}
+				main p {font-size:2.5vh;margin:2vh 0 0 0;}
+				main ul {display:block;}
+				main ul li {margin-bottom:3vh;height:50vh;}
+				main ul li h3 {font-size:5.5vh;}
+				main ul li h4 {font-size:2.5vh;}
+				
+				@keyframes li {from{margin-top:2vh;height:52vh} to{margin-top:0;height:50vh}}
+				@keyframes ul-li { from {margin-bottom:0} to {margin-bottom:2vh} }
+				@keyframes ul-li-a { from {color:transparent} to {color:var(--mainCol)} }
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<section>
+				<input type="checkbox" id="toggle">
+				<div>
+					<h2 onclick="document.location='../'">Sahifa</h2>
+					<label for="toggle">&#8801;</label>
+				</div>
+				<ul>
+				</ul>
+			</section>
+		</header>
+		<main>
+			<h1>Inspiring Al-Quraisy</h1>
+			<p>Surat Al-Quraisy dalam Al-Quran ternyata sangat istimewa. Mengandung inspirasi untuk membangun keunggulan peradaban. Buku ini mengangkat makna-makna penting ayat-ayat dalm surat Al-Quraisy, yang berbeda dari kebanyakan tafsiran orang pada umumnya.</p>
+			
+			<fieldset>
+				<label><strong>Title</strong></label>
+				<div>Inspiring Al-Quraisy</div>
+			</fieldset>
+			<fieldset>
+				<label><strong>Author</strong></label>
+				<div>Prof. Dr. H. Mahmud, M.Si</div>
+			</fieldset>
+			<fieldset>
+				<label><strong>Publisher</strong></label>
+				<div>Sahifa</div>
+			</fieldset>
+			<fieldset>
+				<label><strong>Year</strong></label>
+				<div>2013</div>
+			</fieldset>
+			<fieldset>
+				<label><strong>ISBN</strong></label>
+				<div>978-602-95442-4-4</div>
+			</fieldset>
+			<fieldset>
+				<label><strong>Synopsis</strong></label>
+				<div>Surat Al-Quraisy dalam Al-Quran ternyata sangat istimewa. Mengandung inspirasi untuk membangun keunggulan peradaban. Buku ini mengangkat makna-makna penting ayat-ayat dalm surat Al-Quraisy, yang berbeda dari kebanyakan tafsiran orang pada umumnya.</div>
+			</fieldset>
+		</main>
+		<footer>
+			<div>Penerbit Sahifa. Jl. Bintang Raya 6 Soekarno Hatta Bandung. Jawa Barat. Indonesia. (022)7807724. sahifabandung@gmail.com</div>
+		</footer>
+	</body>
+</html>
